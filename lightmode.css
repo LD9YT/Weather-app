@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +12,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #06283D;
+  background: #fff;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: #06283D;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .container {
   position: relative;
   width: 400px;
   height: 105px;
-  background: #fff;
+  background: #06283D;
   padding: 28px 32px;
   overflow: hidden;
   border-radius: 18px;
@@ -35,7 +50,8 @@ body {
   justify-content: space-between;
 }
 .search-box input {
-  color: #06283D;
+  color: #fff;
+  background: #06283D;
   width: 80%;
   font-size: 24px;
   font-weight: 500;
@@ -45,32 +61,32 @@ body {
 .search-box input::-moz-placeholder {
   font-size: 20px;
   font-weight: 500;
-  color: #06283D;
+  color: #fff;
   text-transform: capitalize;
 }
 .search-box input::placeholder {
   font-size: 20px;
   font-weight: 500;
-  color: #06283D;
+  color: #fff;
   text-transform: capitalize;
 }
 .search-box button {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  color: #06283D;
-  background: #dff6ff;
+  color: #fff;
+  background: #06283D;
   border-radius: 50%;
   font-size: 22px;
   transition: 0.4s ease;
 }
 .search-box button:hover {
   color: #fff;
-  background: #06283D;
+  background: #dff6ff;
 }
 .search-box i {
   position: absolute;
-  color: #06283D;
+  color: #fff;
   font-size: 28px;
 }
 
@@ -83,7 +99,7 @@ body {
 }
 .weather-box .temperature {
   position: relative;
-  color: #06283D;
+  color: #fff;
   font-size: 4rem;
   font-weight: 800;
   margin-top: 30px;
@@ -95,7 +111,7 @@ body {
   font-size: 1.5rem;
 }
 .weather-box .description {
-  color: #06283D;
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
   text-transform: capitalize;
@@ -122,18 +138,18 @@ body {
   justify-content: flex-end;
 }
 .weather-details i {
-  color: #06283D;
+  color: #fff;
   font-size: 26px;
   margin-right: 10px;
   margin-top: 6px;
 }
 .weather-details span {
-  color: #06283D;
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
 }
 .weather-details p {
-  color: #06283D;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
 }
@@ -150,7 +166,7 @@ body {
   width: 70%;
 }
 .not-found p {
-  color: #06283D;
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
   margin-top: 12px;
