@@ -69,9 +69,25 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
-
-
         });
-
-
 });
+
+function toggleMode() {
+    const themeStylesheet = document.getElementById('theme');
+    if (themeStylesheet.href.includes('light')) {
+        themeStylesheet.href = 'darkmode.css';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeStylesheet.href = 'lightmode.css'; 
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+const savedTheme = localStorage.getItem('theme');
+const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme) {
+    document.getElementById('theme').href = `${savedTheme}mode.css`;
+} else if (userPrefersDark) {
+    document.getElementById('theme').href = 'darkmode.css';
+}
