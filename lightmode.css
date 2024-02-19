@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #dff6ff;
 }
 
 .dark-mode-toggle {
@@ -74,15 +74,15 @@ body {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  color: #fff;
-  background: #06283D;
+  color: #06283D;
+  background: #fff;
   border-radius: 50%;
   font-size: 22px;
-  transition: 0.4s ease;
+  transition: all 0.5s ease;
 }
 .search-box button:hover {
   color: #fff;
-  background: #dff6ff;
+  background: #06283D;
 }
 .search-box i {
   position: absolute;
@@ -187,4 +187,4 @@ body {
     scale: 1;
     opacity: 1;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=lightmode.css.map */

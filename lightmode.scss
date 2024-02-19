@@ -14,7 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: #dff6ff;
 }
 
 .dark-mode-toggle {
@@ -71,16 +71,16 @@ body{
         cursor: pointer;
         width: 50px;
         height: 50px;
-        color: #fff;
-        background: $main-color;
+        color: $main-color;
+        background: #fff;
         border-radius: 50%;
         font-size: 22px;
-        transition: 0.4s ease;       
+        transition: all 0.5s ease;
     }
 
     button:hover {
         color: #fff;
-        background: #dff6ff;
+        background: $main-color;
     }
 
     i {
